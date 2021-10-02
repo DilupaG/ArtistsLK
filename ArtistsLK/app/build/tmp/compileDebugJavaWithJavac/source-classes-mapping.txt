@@ -1,0 +1,7 @@
+com/example/artistslk/Model/Artist.java
+ com.example.artistslk.Model.Artist
+com/example/artistslk/BuildConfig.java
+ com.example.artistslk.BuildConfig
+com/example/artistslk/MainActivity.java
+ com.example.artistslk.MainActivity
+ com.example.artistslk.MainActivity$1

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="AddTitleTV">Add new Artist</string>
+    <string name="artistName">Name</string>
+    <string name="artistGenre">Genre</string>
+
+    <array name="Genres">
+        <item>Rock</item>
+        <item>Pop</item>
+        <item>Hip-Pop</item>
+        <item>Classic</item>
+        <item>Country</item>
+    </array>
+
+</resources>
