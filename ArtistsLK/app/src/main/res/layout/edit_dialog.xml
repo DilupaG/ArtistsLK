@@ -3,56 +3,56 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="3dp"
+        android:layout_marginStart="36dp"
         android:text="@string/artistName"
-        app:layout_constraintEnd_toStartOf="@+id/editArtistName"
+        app:layout_constraintBottom_toBottomOf="@+id/editArtistName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/editArtistName" />
 
     <EditText
         android:id="@+id/editArtistName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="39dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="18dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
         android:ems="10"
         android:hint="@string/artistName"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/editArtistGenre"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.26999998" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="47dp"
-        android:layout_marginTop="41dp"
-        android:layout_marginEnd="50dp"
+        android:layout_marginStart="36dp"
         android:text="@string/artistGenre"
-        app:layout_constraintEnd_toStartOf="@+id/editArtistGenre"
+        app:layout_constraintBottom_toBottomOf="@+id/editArtistGenre"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toTopOf="@+id/editArtistGenre" />
 
     <Spinner
         android:id="@+id/editArtistGenre"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="73dp"
-        android:layout_marginBottom="25dp"
+        android:layout_width="204dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="28dp"
         android:entries="@array/Genres"
         app:layout_constraintBottom_toTopOf="@+id/editArtistBtn"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.576"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/editArtistName" />
 
@@ -60,14 +60,22 @@
         android:id="@+id/editArtistBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="27dp"
-        android:layout_marginBottom="527dp"
         android:text="UPDATE"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.141"
-        app:layout_constraintStart_toStartOf="@+id/editArtistGenre"
+        app:layout_constraintHorizontal_bias="0.297"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editArtistGenre" />
+
+    <Button
+        android:id="@+id/deleteArtistBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DELETE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editArtistBtn"
+        app:layout_constraintTop_toTopOf="@+id/editArtistBtn" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

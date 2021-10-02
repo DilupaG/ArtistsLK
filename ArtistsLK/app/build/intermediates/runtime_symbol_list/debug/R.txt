@@ -2015,6 +2015,7 @@ int id decelerate 0x7f09008f
 int id decelerateAndComplete 0x7f090090
 int id decor_content_parent 0x7f090091
 int id default_activity_button 0x7f090092
+int id deleteArtistBtn 0x7f0901ee
 int id deltaRelative 0x7f090093
 int id dependency_ordering 0x7f090094
 int id design_bottom_sheet 0x7f090095
