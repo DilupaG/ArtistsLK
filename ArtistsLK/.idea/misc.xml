@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Andro/ArtistsLK/ArtistsLK/app/src/main/res/layout/activity_add_track.xml" value="0.27447916666666666" />
         <entry key="..\:/Andro/ArtistsLK/ArtistsLK/app/src/main/res/layout/activity_main.xml" value="0.27447916666666666" />
+        <entry key="..\:/Andro/ArtistsLK/ArtistsLK/app/src/main/res/layout/artist_single_row.xml" value="0.4" />
       </map>
     </option>
   </component>

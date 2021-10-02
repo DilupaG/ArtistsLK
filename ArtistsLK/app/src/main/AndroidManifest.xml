@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ArtistsLK">
         <activity
+            android:name=".Admin.AddTrack"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

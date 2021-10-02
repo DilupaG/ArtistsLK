@@ -1,19 +1,31 @@
 package com.example.artistslk;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.example.artistslk.Admin.AddTrack;
+import com.example.artistslk.Admin.ArtistAdapter;
 import com.example.artistslk.Model.Artist;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,6 +34,13 @@ public class MainActivity extends AppCompatActivity {
     Spinner artistGenre;
     Button add;
     Context context;
+
+    public static final String ARTIST_ID = "k";
+    public static final String ARTIST_NAME = "D";
+
+    ListView artistList;
+
+    List<Artist> artistArrayList;
 
     //Firebase DatabaseReference
     DatabaseReference artistsDatabaseRef;
@@ -36,6 +55,8 @@ public class MainActivity extends AppCompatActivity {
         artistGenre = findViewById(R.id.addArtistGenre);
         add = findViewById(R.id.addArtistBtn);
         context = this;
+        artistList = findViewById(R.id.TrackListView);
+        artistArrayList = new ArrayList<>();
 
         artistsDatabaseRef = FirebaseDatabase.getInstance().getReference().child("artists");
 
@@ -44,6 +65,55 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 addArtist();
+            }
+        });
+
+        //handling onclick on list
+        artistList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                Artist artist = artistArrayList.get(i);
+
+                Intent intent = new Intent(getApplicationContext(), AddTrack.class);
+                intent.putExtra(ARTIST_ID,artist.getArtistID());
+                intent.putExtra(ARTIST_NAME,artist.getArtistName());
+                startActivity(intent);
+
+
+
+            }
+        });
+
+
+    }
+    //retrieving
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        //checking for value changes inside database. if any changes happens, the this methods will be executed
+        artistsDatabaseRef.addValueEventListener(new ValueEventListener() {
+
+            //when we change anything inside database
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+
+                for(DataSnapshot artistSnapshot: snapshot.getChildren()){
+
+                    Artist artist = artistSnapshot.getValue(Artist.class);
+                    artistArrayList.add(artist);
+
+                }
+
+                ArtistAdapter adapter = new ArtistAdapter(MainActivity.this,artistArrayList);
+                artistList.setAdapter(adapter);
+
+            }
+            //execute when if there is a error
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
             }
         });
 

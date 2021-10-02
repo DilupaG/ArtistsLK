@@ -1876,6 +1876,7 @@ int id SHOW_PROGRESS 0x7f09000a
 int id SYM 0x7f09000b
 int id TOP_END 0x7f09000c
 int id TOP_START 0x7f09000d
+int id TrackListView 0x7f0901e3
 int id accelerate 0x7f09000e
 int id accessibility_action_clickable_span 0x7f09000f
 int id accessibility_custom_action_0 0x7f090010
@@ -1936,6 +1937,8 @@ int id add 0x7f090046
 int id addArtistBtn 0x7f090047
 int id addArtistGenre 0x7f090048
 int id addArtistName 0x7f090049
+int id addTrackBtn 0x7f0901e4
+int id addTrackName 0x7f0901e5
 int id adjust_height 0x7f09004a
 int id adjust_width 0x7f09004b
 int id alertTitle 0x7f09004c
@@ -1948,6 +1951,9 @@ int id animateToStart 0x7f090052
 int id antiClockwise 0x7f090053
 int id anticipate 0x7f090054
 int id arc 0x7f090055
+int id artistListGenre 0x7f0901e0
+int id artistListIMG 0x7f0901e1
+int id artistListName 0x7f0901e2
 int id asConfigured 0x7f090056
 int id async 0x7f090057
 int id auto 0x7f090058
@@ -2290,7 +2296,6 @@ int id textSpacerNoTitle 0x7f0901a8
 int id textStart 0x7f0901a9
 int id textTop 0x7f0901aa
 int id textView2 0x7f0901ab
-int id textView3 0x7f0901ac
 int id textView4 0x7f0901ad
 int id text_input_end_icon 0x7f0901ae
 int id text_input_error_icon 0x7f0901af
@@ -2309,6 +2314,8 @@ int id toggle 0x7f0901bb
 int id top 0x7f0901bc
 int id topPanel 0x7f0901bd
 int id touch_outside 0x7f0901be
+int id trackRating 0x7f0901e6
+int id trackTitle 0x7f0901e7
 int id transitionToEnd 0x7f0901bf
 int id transitionToStart 0x7f0901c0
 int id transition_current_scene 0x7f0901c1
@@ -2408,7 +2415,9 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0c0018
 int layout abc_search_view 0x7f0c0019
 int layout abc_select_dialog_material 0x7f0c001a
 int layout abc_tooltip 0x7f0c001b
+int layout activity_add_track 0x7f0c0072
 int layout activity_main 0x7f0c001c
+int layout artist_single_row 0x7f0c0071
 int layout custom_dialog 0x7f0c001d
 int layout design_bottom_navigation_item 0x7f0c001e
 int layout design_bottom_sheet_dialog 0x7f0c001f
@@ -2497,6 +2506,7 @@ int mipmap ic_launcher 0x7f0d0000
 int mipmap ic_launcher_round 0x7f0d0001
 int plurals mtrl_badge_content_description 0x7f0e0000
 int string AddTitleTV 0x7f0f0000
+int string AddTrackTV 0x7f0f0085
 int string abc_action_bar_home_description 0x7f0f0001
 int string abc_action_bar_up_description 0x7f0f0002
 int string abc_action_menu_overflow_description 0x7f0f0003
@@ -2524,6 +2534,7 @@ int string abc_searchview_description_voice 0x7f0f0018
 int string abc_shareactionprovider_share_with 0x7f0f0019
 int string abc_shareactionprovider_share_with_application 0x7f0f001a
 int string abc_toolbar_collapse_description 0x7f0f001b
+int string addTrackRating 0x7f0f0086
 int string app_name 0x7f0f001c
 int string appbar_scrolling_view_behavior 0x7f0f001d
 int string artistGenre 0x7f0f001e
@@ -2629,6 +2640,7 @@ int string path_password_strike_through 0x7f0f0081
 int string project_id 0x7f0f0082
 int string search_menu_title 0x7f0f0083
 int string status_bar_notification_info_overflow 0x7f0f0084
+int string trackName 0x7f0f0087
 int style AlertDialog_AppCompat 0x7f100000
 int style AlertDialog_AppCompat_Light 0x7f100001
 int style AndroidThemeColorAccentYellow 0x7f100002
