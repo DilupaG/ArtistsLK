@@ -7,6 +7,7 @@ com/example/artistslk/MainActivity.java
  com.example.artistslk.MainActivity$3
  com.example.artistslk.MainActivity$4
  com.example.artistslk.MainActivity$5
+ com.example.artistslk.MainActivity$6
 com/example/artistslk/BuildConfig.java
  com.example.artistslk.BuildConfig
 com/example/artistslk/Model/Artist.java

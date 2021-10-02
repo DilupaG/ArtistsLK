@@ -67,7 +67,7 @@ public class AddTrack extends AppCompatActivity {
         artistName.setText("Add "+name+"'s new track ");
 
         //database track
-        databaseTrackRef = FirebaseDatabase.getInstance().getReference("tracks").child(name);
+        databaseTrackRef = FirebaseDatabase.getInstance().getReference("tracks").child(id);
 
 
 

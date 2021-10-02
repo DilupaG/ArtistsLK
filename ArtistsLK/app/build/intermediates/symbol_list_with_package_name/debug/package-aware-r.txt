@@ -2016,6 +2016,7 @@ id decelerate
 id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
+id deleteArtistBtn
 id deltaRelative
 id dependency_ordering
 id design_bottom_sheet
