@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ArtistsLK</string>
+    <string name="trackName">Track name</string>
+    <string name="addTrackRating">Rate track</string>
 </resources>

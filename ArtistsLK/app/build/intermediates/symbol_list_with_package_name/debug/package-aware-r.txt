@@ -1877,6 +1877,7 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
+id TrackListView
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -1937,6 +1938,8 @@ id add
 id addArtistBtn
 id addArtistGenre
 id addArtistName
+id addTrackBtn
+id addTrackName
 id adjust_height
 id adjust_width
 id alertTitle
@@ -1949,6 +1952,9 @@ id animateToStart
 id antiClockwise
 id anticipate
 id arc
+id artistListGenre
+id artistListIMG
+id artistListName
 id asConfigured
 id async
 id auto
@@ -2291,7 +2297,6 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView2
-id textView3
 id textView4
 id text_input_end_icon
 id text_input_error_icon
@@ -2310,6 +2315,8 @@ id toggle
 id top
 id topPanel
 id touch_outside
+id trackRating
+id trackTitle
 id transitionToEnd
 id transitionToStart
 id transition_current_scene
@@ -2409,7 +2416,9 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_add_track
 layout activity_main
+layout artist_single_row
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2498,6 +2507,7 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 string AddTitleTV
+string AddTrackTV
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -2525,6 +2535,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string addTrackRating
 string app_name
 string appbar_scrolling_view_behavior
 string artistGenre
@@ -2630,6 +2641,7 @@ string path_password_strike_through
 string project_id
 string search_menu_title
 string status_bar_notification_info_overflow
+string trackName
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

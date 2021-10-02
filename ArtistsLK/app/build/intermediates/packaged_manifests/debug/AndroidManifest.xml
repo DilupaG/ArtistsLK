@@ -25,6 +25,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.ArtistsLK" >
         <activity
+            android:name="com.example.artistslk.Admin.AddTrack"
+            android:exported="true" />
+        <activity
             android:name="com.example.artistslk.MainActivity"
             android:exported="true" >
             <intent-filter>

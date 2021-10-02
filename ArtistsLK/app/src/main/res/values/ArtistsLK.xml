@@ -3,6 +3,7 @@
     <string name="AddTitleTV">Add new Artist</string>
     <string name="artistName">Name</string>
     <string name="artistGenre">Genre</string>
+    <string name="AddTrackTV">Add new Track</string>
 
     <array name="Genres">
         <item>Rock</item>

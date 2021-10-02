@@ -20,7 +20,7 @@
 14-->[com.google.firebase:firebase-database:20.0.2] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\31a6a937917b778354272211aae1edba\transformed\jetified-firebase-database-20.0.2\AndroidManifest.xml:26:22-64
 15
 16    <application
-16-->C:\Andro\ArtistsLK\ArtistsLK\app\src\main\AndroidManifest.xml:5:5-21:19
+16-->C:\Andro\ArtistsLK\ArtistsLK\app\src\main\AndroidManifest.xml:5:5-24:19
 17        android:allowBackup="true"
 17-->C:\Andro\ArtistsLK\ArtistsLK\app\src\main\AndroidManifest.xml:6:9-35
 18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -39,67 +39,73 @@
 26        android:theme="@style/Theme.ArtistsLK" >
 26-->C:\Andro\ArtistsLK\ArtistsLK\app\src\main\AndroidManifest.xml:11:9-47
 27        <activity
-27-->C:\Andro\ArtistsLK\ArtistsLK\app\src\main\AndroidManifest.xml:12:9-20:20
-28            android:name="com.example.artistslk.MainActivity"
-28-->C:\Andro\ArtistsLK\ArtistsLK\app\src\main\AndroidManifest.xml:13:13-41
-29            android:exported="true" >
+27-->C:\Andro\ArtistsLK\ArtistsLK\app\src\main\AndroidManifest.xml:12:9-14:39
+28            android:name="com.example.artistslk.Admin.AddTrack"
+28-->C:\Andro\ArtistsLK\ArtistsLK\app\src\main\AndroidManifest.xml:13:13-43
+29            android:exported="true" />
 29-->C:\Andro\ArtistsLK\ArtistsLK\app\src\main\AndroidManifest.xml:14:13-36
-30            <intent-filter>
-30-->C:\Andro\ArtistsLK\ArtistsLK\app\src\main\AndroidManifest.xml:15:13-19:29
-31                <action android:name="android.intent.action.MAIN" />
-31-->C:\Andro\ArtistsLK\ArtistsLK\app\src\main\AndroidManifest.xml:16:17-69
-31-->C:\Andro\ArtistsLK\ArtistsLK\app\src\main\AndroidManifest.xml:16:25-66
-32
-33                <category android:name="android.intent.category.LAUNCHER" />
-33-->C:\Andro\ArtistsLK\ArtistsLK\app\src\main\AndroidManifest.xml:18:17-77
-33-->C:\Andro\ArtistsLK\ArtistsLK\app\src\main\AndroidManifest.xml:18:27-74
-34            </intent-filter>
-35        </activity>
-36
-37        <service
-37-->[com.google.firebase:firebase-database:20.0.2] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\31a6a937917b778354272211aae1edba\transformed\jetified-firebase-database-20.0.2\AndroidManifest.xml:29:9-35:19
-38            android:name="com.google.firebase.components.ComponentDiscoveryService"
-38-->[com.google.firebase:firebase-database:20.0.2] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\31a6a937917b778354272211aae1edba\transformed\jetified-firebase-database-20.0.2\AndroidManifest.xml:30:13-84
-39            android:directBootAware="true"
-39-->[com.google.firebase:firebase-common:20.0.0] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\86e13b6ca81a6c901885b317cb2ca953\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
-40            android:exported="false" >
-40-->[com.google.firebase:firebase-database:20.0.2] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\31a6a937917b778354272211aae1edba\transformed\jetified-firebase-database-20.0.2\AndroidManifest.xml:31:13-37
-41            <meta-data
-41-->[com.google.firebase:firebase-database:20.0.2] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\31a6a937917b778354272211aae1edba\transformed\jetified-firebase-database-20.0.2\AndroidManifest.xml:32:13-34:85
-42                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-42-->[com.google.firebase:firebase-database:20.0.2] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\31a6a937917b778354272211aae1edba\transformed\jetified-firebase-database-20.0.2\AndroidManifest.xml:33:17-109
-43                android:value="com.google.firebase.components.ComponentRegistrar" />
-43-->[com.google.firebase:firebase-database:20.0.2] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\31a6a937917b778354272211aae1edba\transformed\jetified-firebase-database-20.0.2\AndroidManifest.xml:34:17-82
-44        </service>
-45
-46        <provider
-46-->[com.google.firebase:firebase-common:20.0.0] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\86e13b6ca81a6c901885b317cb2ca953\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
-47            android:name="com.google.firebase.provider.FirebaseInitProvider"
-47-->[com.google.firebase:firebase-common:20.0.0] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\86e13b6ca81a6c901885b317cb2ca953\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
-48            android:authorities="com.example.artistslk.firebaseinitprovider"
-48-->[com.google.firebase:firebase-common:20.0.0] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\86e13b6ca81a6c901885b317cb2ca953\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
-49            android:directBootAware="true"
-49-->[com.google.firebase:firebase-common:20.0.0] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\86e13b6ca81a6c901885b317cb2ca953\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
-50            android:exported="false"
-50-->[com.google.firebase:firebase-common:20.0.0] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\86e13b6ca81a6c901885b317cb2ca953\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
-51            android:initOrder="100" />
-51-->[com.google.firebase:firebase-common:20.0.0] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\86e13b6ca81a6c901885b317cb2ca953\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
-52
-53        <activity
-53-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\9917c1060ba2f79f3519a1b2bf642c2c\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
-54            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-54-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\9917c1060ba2f79f3519a1b2bf642c2c\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
-55            android:exported="false"
-55-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\9917c1060ba2f79f3519a1b2bf642c2c\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
-56            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-56-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\9917c1060ba2f79f3519a1b2bf642c2c\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
-57
-58        <meta-data
-58-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\736795ced1125049463359fb87a935ed\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
-59            android:name="com.google.android.gms.version"
-59-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\736795ced1125049463359fb87a935ed\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
-60            android:value="@integer/google_play_services_version" />
-60-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\736795ced1125049463359fb87a935ed\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
-61    </application>
-62
-63</manifest>
+30        <activity
+30-->C:\Andro\ArtistsLK\ArtistsLK\app\src\main\AndroidManifest.xml:15:9-23:20
+31            android:name="com.example.artistslk.MainActivity"
+31-->C:\Andro\ArtistsLK\ArtistsLK\app\src\main\AndroidManifest.xml:16:13-41
+32            android:exported="true" >
+32-->C:\Andro\ArtistsLK\ArtistsLK\app\src\main\AndroidManifest.xml:17:13-36
+33            <intent-filter>
+33-->C:\Andro\ArtistsLK\ArtistsLK\app\src\main\AndroidManifest.xml:18:13-22:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->C:\Andro\ArtistsLK\ArtistsLK\app\src\main\AndroidManifest.xml:19:17-69
+34-->C:\Andro\ArtistsLK\ArtistsLK\app\src\main\AndroidManifest.xml:19:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->C:\Andro\ArtistsLK\ArtistsLK\app\src\main\AndroidManifest.xml:21:17-77
+36-->C:\Andro\ArtistsLK\ArtistsLK\app\src\main\AndroidManifest.xml:21:27-74
+37            </intent-filter>
+38        </activity>
+39
+40        <service
+40-->[com.google.firebase:firebase-database:20.0.2] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\31a6a937917b778354272211aae1edba\transformed\jetified-firebase-database-20.0.2\AndroidManifest.xml:29:9-35:19
+41            android:name="com.google.firebase.components.ComponentDiscoveryService"
+41-->[com.google.firebase:firebase-database:20.0.2] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\31a6a937917b778354272211aae1edba\transformed\jetified-firebase-database-20.0.2\AndroidManifest.xml:30:13-84
+42            android:directBootAware="true"
+42-->[com.google.firebase:firebase-common:20.0.0] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\86e13b6ca81a6c901885b317cb2ca953\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+43            android:exported="false" >
+43-->[com.google.firebase:firebase-database:20.0.2] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\31a6a937917b778354272211aae1edba\transformed\jetified-firebase-database-20.0.2\AndroidManifest.xml:31:13-37
+44            <meta-data
+44-->[com.google.firebase:firebase-database:20.0.2] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\31a6a937917b778354272211aae1edba\transformed\jetified-firebase-database-20.0.2\AndroidManifest.xml:32:13-34:85
+45                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+45-->[com.google.firebase:firebase-database:20.0.2] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\31a6a937917b778354272211aae1edba\transformed\jetified-firebase-database-20.0.2\AndroidManifest.xml:33:17-109
+46                android:value="com.google.firebase.components.ComponentRegistrar" />
+46-->[com.google.firebase:firebase-database:20.0.2] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\31a6a937917b778354272211aae1edba\transformed\jetified-firebase-database-20.0.2\AndroidManifest.xml:34:17-82
+47        </service>
+48
+49        <provider
+49-->[com.google.firebase:firebase-common:20.0.0] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\86e13b6ca81a6c901885b317cb2ca953\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+50            android:name="com.google.firebase.provider.FirebaseInitProvider"
+50-->[com.google.firebase:firebase-common:20.0.0] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\86e13b6ca81a6c901885b317cb2ca953\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+51            android:authorities="com.example.artistslk.firebaseinitprovider"
+51-->[com.google.firebase:firebase-common:20.0.0] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\86e13b6ca81a6c901885b317cb2ca953\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+52            android:directBootAware="true"
+52-->[com.google.firebase:firebase-common:20.0.0] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\86e13b6ca81a6c901885b317cb2ca953\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+53            android:exported="false"
+53-->[com.google.firebase:firebase-common:20.0.0] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\86e13b6ca81a6c901885b317cb2ca953\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+54            android:initOrder="100" />
+54-->[com.google.firebase:firebase-common:20.0.0] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\86e13b6ca81a6c901885b317cb2ca953\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+55
+56        <activity
+56-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\9917c1060ba2f79f3519a1b2bf642c2c\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+57            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+57-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\9917c1060ba2f79f3519a1b2bf642c2c\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+58            android:exported="false"
+58-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\9917c1060ba2f79f3519a1b2bf642c2c\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+59            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+59-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\9917c1060ba2f79f3519a1b2bf642c2c\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+60
+61        <meta-data
+61-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\736795ced1125049463359fb87a935ed\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+62            android:name="com.google.android.gms.version"
+62-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\736795ced1125049463359fb87a935ed\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+63            android:value="@integer/google_play_services_version" />
+63-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\METROPOLITAN\.gradle\caches\transforms-3\736795ced1125049463359fb87a935ed\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+64    </application>
+65
+66</manifest>
