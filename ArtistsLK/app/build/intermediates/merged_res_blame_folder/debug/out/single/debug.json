@@ -12,6 +12,10 @@
         "source": "C:\\Andro\\ArtistsLK\\ArtistsLK\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
+        "merged": "C:\\Andro\\ArtistsLK\\ArtistsLK\\app\\build\\intermediates\\merged_res\\debug\\layout_edit_dialog.xml.flat",
+        "source": "C:\\Andro\\ArtistsLK\\ArtistsLK\\app\\src\\main\\res\\layout\\edit_dialog.xml"
+    },
+    {
         "merged": "C:\\Andro\\ArtistsLK\\ArtistsLK\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_add_track.xml.flat",
         "source": "C:\\Andro\\ArtistsLK\\ArtistsLK\\app\\src\\main\\res\\layout\\activity_add_track.xml"
     },
@@ -66,5 +70,9 @@
     {
         "merged": "C:\\Andro\\ArtistsLK\\ArtistsLK\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Andro\\ArtistsLK\\ArtistsLK\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Andro\\ArtistsLK\\ArtistsLK\\app\\build\\intermediates\\merged_res\\debug\\layout_track_single_row.xml.flat",
+        "source": "C:\\Andro\\ArtistsLK\\ArtistsLK\\app\\src\\main\\res\\layout\\track_single_row.xml"
     }
 ]

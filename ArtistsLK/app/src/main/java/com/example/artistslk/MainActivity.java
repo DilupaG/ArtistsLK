@@ -1,12 +1,14 @@
 package com.example.artistslk;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -85,6 +87,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        artistList.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                Artist artist = artistArrayList.get(i);
+
+                showEditDialog(artist.getArtistID(),artist.getArtistName()); 
+                return false;
+            }
+        });
+
 
     }
     //retrieving
@@ -98,6 +111,8 @@ public class MainActivity extends AppCompatActivity {
             //when we change anything inside database
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
+
+                artistArrayList.clear();
 
                 for(DataSnapshot artistSnapshot: snapshot.getChildren()){
 
@@ -119,6 +134,66 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void showEditDialog(String id, String name){
+
+        System.out.println(id);
+        System.out.println(name);
+
+        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
+
+        LayoutInflater inflater = getLayoutInflater();
+
+        final View dialogView = inflater.inflate(R.layout.edit_dialog,null);
+
+        dialogBuilder.setView(dialogView);
+
+        final EditText editTextName = dialogView.findViewById(R.id.editArtistName);
+        final Spinner editSpinnerGenre = dialogView.findViewById(R.id.editArtistGenre);
+        final Button editButton = dialogView.findViewById(R.id.editArtistBtn);
+
+        dialogBuilder.setTitle("Update "+name+"'s Details");
+
+        AlertDialog alertDialog = dialogBuilder.create();
+        alertDialog.show();
+
+
+        editButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                String namez = editTextName.getText().toString().trim();
+                String genrez = editSpinnerGenre.getSelectedItem().toString();
+
+                if(TextUtils.isEmpty(namez)){
+
+                    Toast.makeText(context, "Enter Name", Toast.LENGTH_SHORT).show();
+
+
+                }else{
+
+                    updateArtist(id,namez,genrez);
+                    alertDialog.dismiss();
+
+                }
+
+            }
+        });
+        
+
+    }
+
+    public boolean updateArtist(String id, String name, String genre){
+
+        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("artists").child(id);
+
+        Artist artist = new Artist(id,name,genre);
+
+        databaseReference.setValue(artist);
+
+        Toast.makeText(this, "Updated", Toast.LENGTH_SHORT).show();
+
+        return true;
+    }
     public void addArtist(){
 
         //getting user inputs

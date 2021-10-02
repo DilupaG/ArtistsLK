@@ -2043,6 +2043,9 @@ int id easeIn 0x7f0900ab
 int id easeInOut 0x7f0900ac
 int id easeOut 0x7f0900ad
 int id east 0x7f0900ae
+int id editArtistBtn 0x7f0901eb
+int id editArtistGenre 0x7f0901ec
+int id editArtistName 0x7f0901ed
 int id edit_query 0x7f0900af
 int id elastic 0x7f0900b0
 int id end 0x7f0900b1
@@ -2314,6 +2317,9 @@ int id toggle 0x7f0901bb
 int id top 0x7f0901bc
 int id topPanel 0x7f0901bd
 int id touch_outside 0x7f0901be
+int id trackListIMG 0x7f0901e8
+int id trackListName 0x7f0901e9
+int id trackListRating 0x7f0901ea
 int id trackRating 0x7f0901e6
 int id trackTitle 0x7f0901e7
 int id transitionToEnd 0x7f0901bf
@@ -2434,6 +2440,7 @@ int layout design_navigation_menu 0x7f0c0029
 int layout design_navigation_menu_item 0x7f0c002a
 int layout design_text_input_end_icon 0x7f0c002b
 int layout design_text_input_start_icon 0x7f0c002c
+int layout edit_dialog 0x7f0c0074
 int layout material_chip_input_combo 0x7f0c002d
 int layout material_clock_display 0x7f0c002e
 int layout material_clock_display_divider 0x7f0c002f
@@ -2502,6 +2509,7 @@ int layout text_view_with_line_height_from_layout 0x7f0c006d
 int layout text_view_with_line_height_from_style 0x7f0c006e
 int layout text_view_with_theme_line_height 0x7f0c006f
 int layout text_view_without_line_height 0x7f0c0070
+int layout track_single_row 0x7f0c0073
 int mipmap ic_launcher 0x7f0d0000
 int mipmap ic_launcher_round 0x7f0d0001
 int plurals mtrl_badge_content_description 0x7f0e0000
