@@ -2044,6 +2044,9 @@ id easeIn
 id easeInOut
 id easeOut
 id east
+id editArtistBtn
+id editArtistGenre
+id editArtistName
 id edit_query
 id elastic
 id end
@@ -2315,6 +2318,9 @@ id toggle
 id top
 id topPanel
 id touch_outside
+id trackListIMG
+id trackListName
+id trackListRating
 id trackRating
 id trackTitle
 id transitionToEnd
@@ -2435,6 +2441,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout edit_dialog
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider
@@ -2503,6 +2510,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+layout track_single_row
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description

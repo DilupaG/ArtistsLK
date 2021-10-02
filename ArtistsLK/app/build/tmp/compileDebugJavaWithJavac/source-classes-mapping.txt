@@ -1,16 +1,21 @@
-com/example/artistslk/Admin/ArtistAdapter.java
- com.example.artistslk.Admin.ArtistAdapter
-com/example/artistslk/BuildConfig.java
- com.example.artistslk.BuildConfig
-com/example/artistslk/Model/Artist.java
- com.example.artistslk.Model.Artist
-com/example/artistslk/Model/Track.java
- com.example.artistslk.Model.Track
+com/example/artistslk/Admin/TrackAdapter.java
+ com.example.artistslk.Admin.TrackAdapter
 com/example/artistslk/MainActivity.java
  com.example.artistslk.MainActivity
  com.example.artistslk.MainActivity$1
  com.example.artistslk.MainActivity$2
  com.example.artistslk.MainActivity$3
+ com.example.artistslk.MainActivity$4
+ com.example.artistslk.MainActivity$5
+com/example/artistslk/BuildConfig.java
+ com.example.artistslk.BuildConfig
+com/example/artistslk/Model/Artist.java
+ com.example.artistslk.Model.Artist
 com/example/artistslk/Admin/AddTrack.java
  com.example.artistslk.Admin.AddTrack
  com.example.artistslk.Admin.AddTrack$1
+ com.example.artistslk.Admin.AddTrack$2
+com/example/artistslk/Admin/ArtistAdapter.java
+ com.example.artistslk.Admin.ArtistAdapter
+com/example/artistslk/Model/Track.java
+ com.example.artistslk.Model.Track
